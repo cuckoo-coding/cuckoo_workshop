@@ -16,7 +16,7 @@ class _ListviewRouteState extends State<ListviewRoute> {
         title: Text('Listview', style: Theme.of(context).textTheme.headline3),
       ),
       body: Column(
-        children: [
+        children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
             child: Text("My Listview Header", style: Theme.of(context).textTheme.headline4),
