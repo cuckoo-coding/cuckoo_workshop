@@ -15,3 +15,8 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # cuckoo_workshop
+
+This app showcases some Flutter UI implementations. It's the finalized version of the app we are coding together in the Cuckoo Workshop for Flutter beginners.
+Download and have fun altering it in your style :)
+
+www.cuckoo-coding.com
