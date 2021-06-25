@@ -33,7 +33,7 @@ class _HomeRouteState extends State<HomeRoute> {
     );
   }
 
-  _buildListItem(String title, String route) {
+  Widget _buildListItem(String title, String route) {
     return GestureDetector(
       onTap: () {
         Navigator.pushNamed(context, route);

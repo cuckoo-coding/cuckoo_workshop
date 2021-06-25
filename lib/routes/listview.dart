@@ -1,3 +1,6 @@
+import 'dart:io' show Platform;
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ListviewRoute extends StatefulWidget {
@@ -41,6 +44,26 @@ class _ListviewRouteState extends State<ListviewRoute> {
                   );
                 }),
           ),
+          Platform.isIOS
+              ? Padding(
+                  padding: const EdgeInsets.only(bottom: 50.0),
+                  child: CupertinoButton(
+                      color: Colors.pink,
+                      onPressed: () {},
+                      child: const Text(
+                        "IOS Button",
+                        style: TextStyle(color: Colors.white, fontFamily: "Montserrat"),
+                      )))
+              : Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Android Button',
+                      style: TextStyle(color: Colors.white, fontFamily: "Montserrat"),
+                    ),
+                  ),
+                ),
         ],
       ),
     );

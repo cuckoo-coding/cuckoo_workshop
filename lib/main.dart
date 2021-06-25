@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
           subtitle2: TextStyle(fontSize: 14.0, fontFamily: 'OverpassMono', color: Colors.black),
         ),
       ),
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: {
-        '/home': (context) => HomeRoute(),
+        '/': (context) => HomeRoute(),
         '/listview': (context) => ListviewRoute(),
         '/grid': (context) => GridRoute(),
         '/animate': (context) => AnimateRoute(),
