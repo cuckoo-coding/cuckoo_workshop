@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 class CustomColors{
 
-  static Color neonGreen = const Color(0x00F8AD);
-
   static Map<int, Color> neonGreenMaterialSwatch =
   {
     50:Color.fromRGBO(0,248,173, .1),
