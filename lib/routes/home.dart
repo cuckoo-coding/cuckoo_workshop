@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeRoute extends StatefulWidget {
+  const HomeRoute({Key? key}) : super(key: key);
+
   @override
   _HomeRouteState createState() => _HomeRouteState();
 }
@@ -11,7 +13,7 @@ class _HomeRouteState extends State<HomeRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Menu', style: Theme.of(context).textTheme.headline3),
+        title: Text('Menu', style: Theme.of(context).textTheme.displaySmall),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -20,7 +22,7 @@ class _HomeRouteState extends State<HomeRoute> {
             padding: const EdgeInsets.only(top: 70.0, bottom: 30.0),
             child: Image.asset(
               'assets/pics/cuckoo.png',
-              width: MediaQuery.of(context).size.width / 2,
+              width: MediaQuery.sizeOf(context).width / 2,
               fit: BoxFit.cover,
             ),
           ),
@@ -42,11 +44,11 @@ class _HomeRouteState extends State<HomeRoute> {
         child: Padding(
           padding: const EdgeInsets.all(3.0),
           child: Container(
-              width: MediaQuery.of(context).size.width,
+              width: MediaQuery.sizeOf(context).width,
               height: 50,
               child: Text(
                 title,
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               )),
         ),
       ),

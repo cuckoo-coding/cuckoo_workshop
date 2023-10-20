@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ListviewRoute extends StatefulWidget {
+  const ListviewRoute({Key? key}) : super(key: key);
+
   @override
   _ListviewRouteState createState() => _ListviewRouteState();
 }
@@ -16,13 +18,14 @@ class _ListviewRouteState extends State<ListviewRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Listview', style: Theme.of(context).textTheme.headline3),
+        title: Text('Listview', style: Theme.of(context).textTheme.displaySmall),
       ),
       body: Column(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
-            child: Text("My Listview Header", style: Theme.of(context).textTheme.headline4),
+            child: Text("My Listview Header",
+                style: Theme.of(context).textTheme.headlineMedium),
           ),
           Expanded(
             child: ListView.builder(
