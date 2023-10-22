@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GridRoute extends StatefulWidget {
+  const GridRoute({Key? key}) : super(key: key);
+
   @override
   _GridRouteState createState() => _GridRouteState();
 }
@@ -22,13 +24,13 @@ class _GridRouteState extends State<GridRoute> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Gridview', style: Theme.of(context).textTheme.headline3),
+        title: Text('Gridview', style: Theme.of(context).textTheme.displaySmall),
       ),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
-            child: Text("My Gridview Header", style: Theme.of(context).textTheme.headline3),
+            child: Text("My Gridview Header", style: Theme.of(context).textTheme.displaySmall),
           ),
           Expanded(
             child: Padding(
