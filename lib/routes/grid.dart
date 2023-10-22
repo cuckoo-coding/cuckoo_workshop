@@ -24,20 +24,25 @@ class _GridRouteState extends State<GridRoute> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Gridview', style: Theme.of(context).textTheme.displaySmall),
+        title:
+            Text('Gridview', style: Theme.of(context).textTheme.displayMedium),
       ),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
-            child: Text("My Gridview Header", style: Theme.of(context).textTheme.displaySmall),
+            child: Text("My Gridview Header",
+                style: Theme.of(context).textTheme.displayMedium),
           ),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(15.0),
               child: GridView.builder(
-                  gridDelegate:
-                      SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150, childAspectRatio: 3 / 2, crossAxisSpacing: 20, mainAxisSpacing: 20),
+                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                      maxCrossAxisExtent: 150,
+                      childAspectRatio: 3 / 2,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 20),
                   itemCount: myList.length,
                   itemBuilder: (context, i) {
                     return Card(
@@ -45,7 +50,8 @@ class _GridRouteState extends State<GridRoute> {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: GridTile(
-                          child: Icon(myList[i], color: Colors.white, size: 40.0),
+                          child:
+                              Icon(myList[i], color: Colors.white, size: 40.0),
                         ),
                       ),
                     );

@@ -15,7 +15,8 @@ class _AnimateRouteState extends State<AnimateRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Animate', style: Theme.of(context).textTheme.displaySmall),
+        title:
+            Text('Animate', style: Theme.of(context).textTheme.displayMedium),
       ),
       body: AnimatedOpacity(
         opacity: buttonClicked ? 0.0 : 1.0,
@@ -35,32 +36,31 @@ class _AnimateRouteState extends State<AnimateRoute> {
             ),
             Text(
               "Everything fades away eventually....",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
               "And returns.",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
               "And fades.",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
               "And returns.",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
               "And fades.",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Text(
               "Ah whatever...",
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
         ),
       ),
-
       floatingActionButton: FloatingActionButton(
         onPressed: _playAnimation,
         tooltip: 'Animation',
@@ -68,7 +68,7 @@ class _AnimateRouteState extends State<AnimateRoute> {
           Icons.add,
           color: Colors.white,
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 

@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class TransformRoute extends StatefulWidget {
@@ -16,9 +17,11 @@ class _TransformRouteState extends State<TransformRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Transform', style: Theme.of(context).textTheme.displaySmall),
+        title:
+            Text('Transform', style: Theme.of(context).textTheme.displayMedium),
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
+      body:
+          Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
         Padding(
           padding: const EdgeInsets.only(top: 70.0, bottom: 30.0),
           child: Transform(

@@ -22,7 +22,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/pics/
+    - assets/pics/cuckoo.png
 
   fonts:
     - family: Pangram-Black

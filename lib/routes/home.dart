@@ -13,7 +13,7 @@ class _HomeRouteState extends State<HomeRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Menu', style: Theme.of(context).textTheme.displaySmall),
+        title: Text('Menu', style: Theme.of(context).textTheme.displayMedium),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -26,16 +26,16 @@ class _HomeRouteState extends State<HomeRoute> {
               fit: BoxFit.cover,
             ),
           ),
-          _buildListItem("Listview", "/listview"),
-          _buildListItem("Grid", "/grid"),
-          _buildListItem("Animate", "/animate"),
-          _buildListItem("Transform", "/transform"),
+          _buildCardWidget("Listview", "/listview"),
+          _buildCardWidget("Grid", "/grid"),
+          _buildCardWidget("Animate", "/animate"),
+          _buildCardWidget("Transform", "/transform"),
         ],
       ),
     );
   }
 
-  Widget _buildListItem(String title, String route) {
+  Widget _buildCardWidget(String title, String route) {
     return GestureDetector(
       onTap: () {
         Navigator.pushNamed(context, route);
